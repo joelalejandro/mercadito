@@ -1,0 +1,61 @@
+@import 'colours.scss';
+
+@mixin line-height {
+  line-height: 120%;
+}
+
+body {
+  background: #fafafa;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+  margin: 2em;
+}
+
+article#product { 
+  width: 65%;
+  margin: 0 auto;
+  @include line-height;
+  
+  .title {
+    font-size: 3em;
+    @include line-height;
+  }
+  
+  .nav-heading {
+    font-size: 1.5em;
+  }
+  
+  .main-image {
+    max-width: 100%;
+  }
+  
+  label {
+    display: block;
+    
+    &.price {
+      color: $price;
+      font-size: 2em;
+      font-weight: bold;
+      
+      sup {
+        font-size: 0.5em;
+        position: relative;
+        top: -0.75em;
+      }
+    }
+  }
+  
+  form.buy {
+    width: 100%;
+
+    select {
+      width: auto;
+    }
+    
+    em.footnote {
+      display: block;
+      font-style: normal;
+      font-size: 0.75em;
+    }
+  }
+}

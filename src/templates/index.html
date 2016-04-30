@@ -1,0 +1,90 @@
+<!doctype html>
+<!--[if IE 7]>    <html class="no-js lt-ie10 lt-ie9 lt-ie8 ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie10 lt-ie9 ie8" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10 ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <title>My index</title>
+  <!-- inject:css -->
+  <!-- endinject -->
+</head>
+<body>
+
+  <article id="product" itemscope itemtype="http://schema.org/Offer" itemid="#product"> 
+    <header class="mesh-row">
+      <h1 class="title" class="mesh-col-12" itemprop="name">
+        iPad Mini Apple 16 Gb WiFi Led 7.9"
+      </h1>
+    </header>
+      
+    <main class="mesh-row"> 
+      <aside class="mesh-col-6">
+        <img class="main-image" src="images/main.jpg" itemprop="image">
+      </aside>
+      <section class="mesh-col-6">
+        <label class="price">
+          <meta itemprop="priceCurrency" content="ARS">$
+          <meta itemprop="price" content="4799.99">4.799<sup>99</sup>            
+        </label>
+        <form class="buy" novalidate>
+          <fieldset class="mesh-row">
+            <label for="selectQuantity" class="mesh-col-l-1 mesh-col-s-3 mesh-col-xs-12">Quantity</label>
+            <select name="selectQuantity" required class="mesh-col-l-11 mesh-col-s-9 mesh-col-xs-12">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            <datalist id="quantityPerOrder" itemprop="eligibleQuantity" itemscope itemtype="http://schema.org/QuantitativeValue" itemid="#quantityPerOrder">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <meta itemprop="minValue" content="1">
+              <meta itemprop="maxValue" content="4">
+              <meta itemprop="value" content="1">
+              <meta itemprop="unitCode" content="C62">
+            </datalist>
+          </fieldset>
+          <fieldset class="mesh-row">
+            <label for="selectPayments" class="mesh-col-l-1 mesh-col-s-3 mesh-col-xs-12">Payments</label>
+            <select name="selectPayment" required class="mesh-col-l-11 mesh-col-s-9 mesh-col-xs-12"></select>
+          </fieldset>
+          <button type="submit">Buy</button>
+          <em class="footnote">Mercadito is not the owner of this product.</em>
+        </form>
+        <h2 class="nav-heading">More products like this</h2>
+        <ul class="related-products">
+          <li><img src="images/related-1.jpg"></li>
+          <li><img src="images/related-2.jpg"></li>
+          <li><img src="images/related-3.jpg"></li>
+          <li><img src="images/related-4.jpg"></li>
+          <li><img src="images/related-5.jpg"></li>
+          <li><img src="images/related-6.jpg"></li>
+        </ul>
+      </section>
+    </main>
+    
+    <footer>
+      <ul class="ch-tabs">
+        <li class="ch-tab">Product description</li>
+        <li class="ch-tab">Questions</li>  
+      </ul>
+      <div class="ch-tab-panel">
+        Product description
+      </div>
+      <div class="ch-tab-panel">
+        Buyer seller
+      </div>
+    </footer>      
+  </article>
+  
+  
+  <!-- inject:js -->
+  <!-- endinject -->
+  
+  <script>
+    $('.related-products').carousel();
+  </script>    
+</body>
+</html>
