@@ -1,5 +1,6 @@
 {
-  "name": "mercadito2",
+  "name": "mercadito",
+  "private": true,
   "description": "",
   "main": "index.js",
   "authors": [
