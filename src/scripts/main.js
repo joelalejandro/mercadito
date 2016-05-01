@@ -1,1 +1,0 @@
-$(window).load(function() { $('.related-products').carousel({ limitPerPage: 3 }); });
