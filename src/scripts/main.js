@@ -1,2 +1,1 @@
-import RelatedProductsManager from './related-products';
-
+$(window).load(function() { $('.related-products').carousel({ limitPerPage: 3 }); });

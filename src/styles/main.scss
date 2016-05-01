@@ -11,15 +11,20 @@ body {
   margin: 2em;
 }
 
-article#product { 
+body > header {
+  width: 65%;
+  margin: 0 auto!important;
+}
+
+.title {
+  font-size: 3em;
+  @include line-height;
+}
+
+.product { 
   width: 65%;
   margin: 0 auto;
   @include line-height;
-  
-  .title {
-    font-size: 3em;
-    @include line-height;
-  }
   
   .nav-heading {
     font-size: 1.5em;
@@ -27,6 +32,70 @@ article#product {
   
   .main-image {
     max-width: 100%;
+    border: 1px solid #ccc;
+  }
+  
+  .related-products {
+    width: 207px * 3;
+    height: 150px;
+  }
+
+  .related-products li {
+    float: left;    
+  }
+  
+  .related-products img {
+    width: 207px;
+    height: 150px;
+  }
+  
+  .ch-tabs {
+    
+    .ch-tab {
+      margin: 0;
+      padding: 0;
+      background: #fafafa;
+      
+      border-bottom: 0;
+      
+      label {
+        background: #c0c0c0;
+        padding: 1em;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        
+        &:hover {
+          background: #dfdfdf;
+        }
+      }
+    }
+
+    input[type="radio"] {
+      visibility: hidden;
+      position: absolute;
+      margin-left: -9999px;
+    }
+    
+    input[type="radio"]:checked + .ch-tab label, input[type="radio"]:focus + .ch-tab label {
+      background: none;
+      border-bottom: 0;
+      font-weight: bold;
+    }
+    
+    input[type="radio"]:checked + .ch-tab + .ch-tab-panel, input[type="radio"]:focus + .ch-tab + .ch-tab-panel {
+      display: block;
+    }
+   
+    .ch-tab-panel {
+      display: none;
+      float  : right;
+      width  : 100%;
+      padding: 1em;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      margin-top: -1px;
+    }
+    
   }
   
   label {
@@ -36,6 +105,7 @@ article#product {
       color: $price;
       font-size: 2em;
       font-weight: bold;
+      line-height: 2em;
       
       sup {
         font-size: 0.5em;
@@ -47,6 +117,7 @@ article#product {
   
   form.buy {
     width: 100%;
+    margin-bottom: 1em;
 
     select {
       width: auto;
@@ -56,6 +127,10 @@ article#product {
       display: block;
       font-style: normal;
       font-size: 0.75em;
+    }
+    
+    [type="submit"] {
+      margin-top: 1em;
     }
   }
 }
