@@ -1,5 +1,6 @@
 # mercadito
 A front-end demo with MercadoLibre's UI, Chico.
+Watch it in action [here](http://joelalejandro.github.io/mercadito/).
 
 ## how to run
 This project requires `npm`, `bower`, and `gulp-cli`.
