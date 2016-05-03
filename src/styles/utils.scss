@@ -1,0 +1,14 @@
+@mixin line-height {
+  line-height: 120%;
+}
+
+@mixin centered {
+  margin: 0 auto!important;
+}
+
+@mixin widthOrFull($width) {
+  width: $width;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
+}

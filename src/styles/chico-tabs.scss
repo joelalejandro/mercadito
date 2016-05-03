@@ -1,0 +1,61 @@
+@import 'colours.scss';
+@import 'utils.scss';
+
+.ch-tabs {
+  
+  .ch-tab {
+    margin: 0;
+    padding: 0;
+    background: $whitesmoke;
+    
+    border-bottom: 0;
+    
+    label {
+      background: $silver;
+      padding: 1em;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      
+      &:hover {
+        background: #dfdfdf;
+      }
+    }
+  }
+
+  input[type="radio"] {
+    visibility: hidden;
+    position: absolute;
+    margin-left: -9999px;
+  }
+  
+  input[type="radio"]:checked + .ch-tab label,
+  input[type="radio"]:focus + .ch-tab label {
+    background: none;
+    border-bottom: 0;
+    font-weight: bold;
+  }
+  
+  input[type="radio"]:checked + .ch-tab + .ch-tab-panel,
+  input[type="radio"]:focus + .ch-tab + .ch-tab-panel {
+    display: block;
+  }
+  
+  .ch-tab-panel {
+    display: none;
+    float  : right;
+    width  : 100%;
+    padding: 1em;
+    box-sizing: border-box;
+    border: 1px solid $silver;
+    margin-top: -1px;
+    
+  }
+  
+  .seller, .buyer {
+    @include line-height; margin-bottom: 0.5em; font-weight: bold;
+  }
+    
+  .seller { color: $seller; }
+  .buyer { color: $buyer; }
+  
+}

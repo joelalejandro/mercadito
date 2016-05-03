@@ -1,0 +1,89 @@
+@import 'colours.scss';
+@import 'utils.scss';
+
+.product { 
+  @include widthOrFull(70%);
+  @include centered;
+  @include line-height;
+  
+  .nav-heading {
+    font-size: 1.5em;
+  }
+  
+  .main-image {
+    max-width: 100%;
+    max-height: 500px;
+    border: 1px solid $silver;
+  }
+  
+  @import 'chico-tabs.scss';
+  
+  label {
+    display: block;
+    
+    &.price {
+      margin-bottom: 1em;
+      color: $price;
+      font-size: 2em;
+      font-weight: bold;
+      @include line-height;
+      
+      sup {
+        font-size: 0.5em;
+        position: relative;
+        top: -0.75em;
+      }
+    }
+  }
+  
+  form.buy {
+    width: 100%;
+    margin-bottom: 1em;
+
+    select {
+      width: auto;
+    }
+    
+    fieldset {
+      margin-bottom: 0.5em;
+      
+      label {
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      select {
+        width: 100%;
+        margin: 0.5em 1em;
+      }
+    }
+    
+    em.footnote {
+      display: block;
+      font-style: normal;
+      font-size: 0.75em;
+        margin-bottom: 3em;
+    }
+    
+    [type="submit"] {
+      margin-top: 1em;
+    }
+    
+    @media only screen and (max-width: 768px) {
+      [type="submit"] {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1em;
+        padding: 0.25em 4em;
+      }
+      
+      em.footnote {
+        text-align: center;
+        margin-bottom: 3em;
+      }
+    }
+  }
+}
