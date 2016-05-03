@@ -1,13 +1,13 @@
 {
   "name": "mercadito",
   "private": true,
-  "description": "",
-  "main": "index.js",
+  "description": "Frontend test for ML",
+  "main": "src/scripts/main.js",
   "authors": [
     "Joel Alejandro Villarreal Bertoldi <joel.a.villarreal@gmail.com>"
   ],
-  "license": "ISC",
-  "homepage": "",
+  "license": "",
+  "homepage": "https://github.com/joelalejandro/mercadito",
   "ignore": [
     "**/.*",
     "node_modules",
