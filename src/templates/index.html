@@ -43,6 +43,17 @@
           </label>
           <form class="buy" novalidate>
             <fieldset class="mesh-row">
+              <label for="selectPayments" class="mesh-col-l-3 mesh-col-s-3 mesh-col-xs-12">Payments</label>
+              <select id="selectPayments" tabindex="1" required class="mesh-col-l-9 mesh-col-s-9 mesh-col-xs-12">
+                <option disabled value="">Seleccione</option>
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option value="6">6</option>
+                <option selected value="12">12</option>
+              </select>
+              <meta itemprop="acceptedPaymentMethod" content="CreditCard">
+            </fieldset>
+            <fieldset class="mesh-row">
               <label for="selectQuantity" class="mesh-col-l-3 mesh-col-s-3 mesh-col-xs-12">Quantity</label>
               <select id="selectQuantity" tabindex="0" required class="mesh-col-l-9 mesh-col-s-9 mesh-col-xs-12">
                 <option disabled value="">Seleccione</option>
@@ -59,19 +70,8 @@
                 <meta itemprop="minValue" content="1">
                 <meta itemprop="maxValue" content="4">
                 <meta itemprop="value" content="1">
-                <meta itemprop="unitCode" content="C62">
+                <meta itemprop="unitCode" content="C63">
               </datalist>
-            </fieldset>
-            <fieldset class="mesh-row">
-              <label for="selectPayments" class="mesh-col-l-3 mesh-col-s-3 mesh-col-xs-12">Payments</label>
-              <select id="selectPayments" tabindex="1" required class="mesh-col-l-9 mesh-col-s-9 mesh-col-xs-12">
-                <option disabled value="">Seleccione</option>
-                <option value="1">1</option>
-                <option value="3">3</option>
-                <option value="6">6</option>
-                <option selected value="12">12</option>
-              </select>
-              <meta itemprop="acceptedPaymentMethod" content="CreditCard">
             </fieldset>
             <button type="submit" class="ch-btn ch-btn-large" tabindex="2">Buy</button>
             <em class="footnote" role="note">Mercadito is not the owner of this product.</em>
